@@ -424,16 +424,7 @@ tr:nth-child(even) {
 														var arrTxt3 = $('#address2').val();
 														$("#inputmsg5").html(arrTxt1+ arrTxt2 + arrTxt3);
 														
-													/* 	$("#cartypename").val($('li.active>a').text());
-														$("#detail_date").val($('#chooseDate').val());
-														$("#detail_time_no").val($("input[name='optradio']:checked").val());
-														$("#detail_time").val($("input[name='optradio']:checked").attr("text"));
-														$("#countyfor").val($('.county').val());
-														$("#districtfor").val($('.district').val());
-														$("#addressfor").val($('#address').val());
-														$("#arrival_address").val($("#inputmsg5").html()); */
-														
-														
+													
 														 cartypename = $('li.active>a').text().trim();
 														 detail_date = $('#chooseDate').val();
 													     detail_time_no =$("input[name='optradio']:checked").val();
@@ -448,7 +439,7 @@ tr:nth-child(even) {
 											
 									    	$('.submit-form').click(function() {
 									    		
-											    console.log("123245"+"cartypename:"+cartypename+"; detail_date:"+detail_date+";detail_time_no:"+detail_time_no+"; detail_time:"+detail_time+";county:"+county+"; district:"+district+";address:"+address+";arrival_address:"+arrival_address);
+											    console.log("cartypename:"+cartypename+"; detail_date:"+detail_date+";detail_time_no:"+detail_time_no+"; detail_time:"+detail_time+";county:"+county+"; district:"+district+";address:"+address+";arrival_address:"+arrival_address);
 									    		$.ajax({
 													 type: "POST",
 													 url: "<%=request.getContextPath()%>/cardetail/cardetail.do",

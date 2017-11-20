@@ -313,7 +313,7 @@ public class CarDetailServlet extends HttpServlet {
 			String detailDateString = req.getParameter("detail_date").trim();
 			System.out.println("訂單日期(多天)字串:"+ detailDateString);
 			
-			int howManyDays=1; 
+			int howManyDays=0; 
 			String[] days = detailDateString.split(",");
 			 for (String orderDay:days) {
 			   System.out.println(orderDay);
